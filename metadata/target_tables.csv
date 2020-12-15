@@ -1,2 +1,3 @@
-schema,table,generate,table_type
-dv,customer_cbc,TRUE,table
+﻿schema,table,generate,table_type
+dv,customer_cbc,TRUE,view
+dv,customer_con,TRUE,view
