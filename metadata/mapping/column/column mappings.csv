@@ -1,5 +1,5 @@
 src_schema,src_table,src_column,transformation,tgt_schema,tgt_table,tgt_column
-Sales,Customer,CustomerID,,dv,customer_cbc,customer_key
-Sales,Customer,ModifiedDate,,dv,customer_cbc,effective_dts
-Sales,Customer,now(),,dv,customer_cbc,load_dts
-Sales,Customer,,aw2019_sales_customer',dv,customer_cbc,rec_src
+Sales,Customer,CustomerID,,dv,customer_h,customer_key
+Sales,Customer,ModifiedDate,,dv,customer_h,effective_dts
+Sales,Customer,now(),,dv,customer_h,load_dts
+Sales,Customer,,aw2019_sales_customer',dv,customer_h,rec_src

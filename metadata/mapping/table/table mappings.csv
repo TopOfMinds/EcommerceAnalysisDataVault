@@ -1,2 +1,2 @@
 source_schema,source_table,source_filter,target_schema,target_table
-Sales.Customer,person_detail,id != 0,dv,customer_cbc
+Sales,Customer,id != 0,dv,customer_h
