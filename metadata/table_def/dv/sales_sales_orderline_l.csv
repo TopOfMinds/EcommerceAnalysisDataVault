@@ -1,0 +1,6 @@
+name,type,kind,null?,default,primary key,unique key,check,expression,comment
+sales_sales_orderline_l_key,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+sales_key,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+sales_orderline_key,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+load_dts,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+rec_src,VARCHAR(4),COLUMN,Y,,N,N,,,

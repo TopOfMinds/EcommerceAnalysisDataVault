@@ -1,2 +1,12 @@
-﻿schema,table,generate,table_type
-dv,customer_h,true,table
+schema,table,generate
+-- Hubs
+dv,sales_h,true
+dv,sales_orderline_h,true
+dv,product_h,true
+
+-- Links
+dv,sales_sales_orderline_l,true
+dv,sales_orderline_product_l,true
+
+-- Satellite
+dv,sales_main_s,true

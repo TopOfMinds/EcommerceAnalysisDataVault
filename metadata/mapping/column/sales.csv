@@ -1,0 +1,35 @@
+src_schema,src_table,src_column,transformation,tgt_schema,tgt_table,tgt_column
+src_adventureworks,salesorderheader,src:SalesOrderID::STRING,,dv,sales_h,sales_key
+src_adventureworks,salesorderheader,src:SalesOrderID::STRING,,dv,sales_h,sales_id
+src_adventureworks,salesorderheader,CURRENT_TIMESTAMP,,dv,sales_h,load_dts
+src_adventureworks,salesorderheader,,'sales',dv,sales_h,rec_src
+
+src_adventureworks,salesorderdetail,src:SalesOrderDetailID::STRING,,dv,sales_orderline_h,sales_orderline_key
+src_adventureworks,salesorderdetail,src:SalesOrderDetailID::STRING,,dv,sales_orderline_h,sales_orderline_id
+src_adventureworks,salesorderdetail,CURRENT_TIMESTAMP,,dv,sales_orderline_h,load_dts
+src_adventureworks,salesorderdetail,,'sales',dv,sales_orderline_h,rec_src
+
+src_adventureworks,salesorderdetail,"src:SalesOrderID::STRING ||'|'|| src:SalesOrderDetailID::STRING",,dv,sales_sales_orderline_l,sales_sales_orderline_l_key
+src_adventureworks,salesorderdetail,src:SalesOrderID::STRING,,dv,sales_sales_orderline_l,sales_key
+src_adventureworks,salesorderdetail,src:SalesOrderDetailID::STRING,,dv,sales_sales_orderline_l,sales_orderline_key
+src_adventureworks,salesorderdetail,CURRENT_TIMESTAMP,,dv,sales_sales_orderline_l,load_dts
+src_adventureworks,salesorderdetail,,'sales',dv,sales_sales_orderline_l,rec_src
+
+src_adventureworks,salesorderdetail,"src:SalesOrderID::STRING ||'|'|| src:ProductID::STRING",,dv,sales_orderline_product_l,sales_orderline_product_l_key
+src_adventureworks,salesorderdetail,src:SalesOrderID::STRING,,dv,sales_orderline_product_l,sales_orderline_key
+src_adventureworks,salesorderdetail,src:ProductID::STRING,,dv,sales_orderline_product_l,product_key
+src_adventureworks,salesorderdetail,CURRENT_TIMESTAMP,,dv,sales_orderline_product_l,load_dts
+src_adventureworks,salesorderdetail,,'sales',dv,sales_orderline_product_l,rec_src
+
+src_adventureworks,salesorderheader,src:SalesOrderID::STRING,,dv,sales_main_s,sales_key
+src_adventureworks,salesorderheader,CURRENT_TIMESTAMP,,dv,sales_main_s,load_dts
+src_adventureworks,salesorderheader,src:ModifiedDate::TIMESTAMP,,dv,sales_main_s,effective_ts
+src_adventureworks,salesorderheader,src:OrderDate::DATE,,dv,sales_main_s,orderdate
+src_adventureworks,salesorderheader,"src:Freight::NUMBER(18,4)",,dv,sales_main_s,freight
+src_adventureworks,salesorderheader,src:OnlineOrderFlag::BOOLEAN,,dv,sales_main_s,onlineorderflag
+src_adventureworks,salesorderheader,src:Status::STRING,,dv,sales_main_s,status
+src_adventureworks,salesorderheader,"src:SubTotal::NUMBER(18,4)",,dv,sales_main_s,subtotal
+src_adventureworks,salesorderheader,"src:TaxAmt::NUMBER(18,4)",,dv,sales_main_s,taxamt
+src_adventureworks,salesorderheader,"src:TotalDue::NUMBER(18,4)",,dv,sales_main_s,totaldue
+src_adventureworks,salesorderheader,src:DueDate::DATE,,dv,sales_main_s,duedate
+src_adventureworks,salesorderheader,,'sales',dv,sales_main_s,rec_src

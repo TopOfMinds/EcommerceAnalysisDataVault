@@ -1,0 +1,5 @@
+name,type,kind,null?,default,primary key,unique key,check,expression,comment
+sales_key,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+sales_id,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+load_dts,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+rec_src,VARCHAR(4),COLUMN,Y,,N,N,,,

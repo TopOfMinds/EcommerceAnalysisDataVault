@@ -1,5 +1,0 @@
-﻿name,type,kind,null?,default,primary key,unique key,check,expression,comment
-customer_key,INT,COLUMN,N,NULL,Y,N,NULL,NULL,NULL
-effective_dts,DATETIME,COLUMN,N,NULL,N,N,NULL,NULL,NULL
-load_dts,DATETIME,COLUMN,N,NULL,N,N,NULL,NULL,NULL
-rec_src,VARCHAR(50),COLUMN,Y,NULL,N,N,NULL,NULL,NULL

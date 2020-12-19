@@ -1,0 +1,5 @@
+src_schema,src_table,src_column,transformation,tgt_schema,tgt_table,tgt_column
+src_adventureworks,product,src:ProductID::STRING,,dv,product_h,product_key
+src_adventureworks,product,src:ProductID::STRING,,dv,product_h,product_id
+src_adventureworks,product,CURRENT_TIMESTAMP,,dv,product_h,load_dts
+src_adventureworks,product,,'sales',dv,product_h,rec_src
