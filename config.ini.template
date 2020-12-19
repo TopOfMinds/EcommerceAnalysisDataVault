@@ -1,0 +1,12 @@
+[snowflake]
+user=<username snowflake>
+password=<passwd snowflake>
+account=topofminds.eu-central-1
+region=eu-central-1
+database=
+warehouse=
+schema=
+[s3]
+bucket=
+aws_key_id=
+aws_secret_key=<secret>

@@ -1,0 +1,12 @@
+
+.DS_Store
+sql/.DS_Store
+sql/dw/.DS_Store
+scripts/config.ini
+config.ini
+.eggs
+*.egg-info
+__pycache__
+.vscode/
+.secrets
+
