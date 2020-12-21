@@ -1,0 +1,9 @@
+name,type,kind,null?,default,primary key,unique key,check,expression,comment
+sales_key,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+load_dts,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+effective_ts,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+freight,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+subtotal,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+taxamt,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+totaldue,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+rec_src,VARCHAR(4),COLUMN,Y,,N,N,,,

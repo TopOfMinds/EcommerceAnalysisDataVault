@@ -1,0 +1,9 @@
+name,type,kind,null?,default,primary key,unique key,check,expression,comment
+sales_key,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+load_dts,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+effective_ts,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+orderdate,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+onlineorderflag,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+status,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+duedate,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+rec_src,VARCHAR(4),COLUMN,Y,,N,N,,,

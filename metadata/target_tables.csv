@@ -10,3 +10,5 @@ dv,sales_orderline_product_l,true
 
 -- Satellite
 dv,sales_main_s,true
+dv,sales_context_s,true
+dv,sales_mesaures_s,true
