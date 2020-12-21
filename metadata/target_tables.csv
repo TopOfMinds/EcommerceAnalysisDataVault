@@ -12,3 +12,5 @@ dv,sales_orderline_product_l,true
 dv,sales_main_s,true
 dv,sales_context_s,true
 dv,sales_mesaures_s,true
+dv,sales_orderline_measures_s,true
+dv,product_main_s,true

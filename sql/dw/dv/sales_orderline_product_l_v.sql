@@ -21,8 +21,8 @@ FROM (
   FROM (
     
     SELECT
-      src:SalesOrderID::STRING || '|' || src:ProductID::STRING AS sales_orderline_product_l_key
-      ,src:SalesOrderID::STRING AS sales_orderline_key
+      src:SalesOrderDetailID::STRING || '|' || src:ProductID::STRING AS sales_orderline_product_l_key
+      ,src:SalesOrderDetailID::STRING AS sales_orderline_key
       ,src:ProductID::STRING AS product_key
       ,CURRENT_TIMESTAMP AS load_dts
       ,'sales' AS rec_src

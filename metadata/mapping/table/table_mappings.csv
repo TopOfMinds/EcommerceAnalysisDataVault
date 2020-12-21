@@ -7,3 +7,5 @@ src_adventureworks,product,,dv,product_h
 src_adventureworks,salesorderheader,,dv,sales_main_s
 src_adventureworks,salesorderheader,,dv,sales_context_s
 src_adventureworks,salesorderheader,,dv,sales_mesaures_s
+src_adventureworks,salesorderdetail,,dv,sales_orderline_measures_s
+src_adventureworks,product,,dv,product_main_s

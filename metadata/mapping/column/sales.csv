@@ -15,8 +15,8 @@ src_adventureworks,salesorderdetail,src:SalesOrderDetailID::STRING,,dv,sales_sal
 src_adventureworks,salesorderdetail,CURRENT_TIMESTAMP,,dv,sales_sales_orderline_l,load_dts
 src_adventureworks,salesorderdetail,,'sales',dv,sales_sales_orderline_l,rec_src
 
-src_adventureworks,salesorderdetail,"src:SalesOrderID::STRING ||'|'|| src:ProductID::STRING",,dv,sales_orderline_product_l,sales_orderline_product_l_key
-src_adventureworks,salesorderdetail,src:SalesOrderID::STRING,,dv,sales_orderline_product_l,sales_orderline_key
+src_adventureworks,salesorderdetail,"src:SalesOrderDetailID::STRING ||'|'|| src:ProductID::STRING",,dv,sales_orderline_product_l,sales_orderline_product_l_key
+src_adventureworks,salesorderdetail,src:SalesOrderDetailID::STRING,,dv,sales_orderline_product_l,sales_orderline_key
 src_adventureworks,salesorderdetail,src:ProductID::STRING,,dv,sales_orderline_product_l,product_key
 src_adventureworks,salesorderdetail,CURRENT_TIMESTAMP,,dv,sales_orderline_product_l,load_dts
 src_adventureworks,salesorderdetail,,'sales',dv,sales_orderline_product_l,rec_src
@@ -51,3 +51,14 @@ src_adventureworks,salesorderheader,"src:SubTotal::NUMBER(18,4)",,dv,sales_mesau
 src_adventureworks,salesorderheader,"src:TaxAmt::NUMBER(18,4)",,dv,sales_mesaures_s,taxamt
 src_adventureworks,salesorderheader,"src:TotalDue::NUMBER(18,4)",,dv,sales_mesaures_s,totaldue
 src_adventureworks,salesorderheader,,'sales',dv,sales_mesaures_s,rec_src
+
+src_adventureworks,salesorderdetail,,,dv,sales_orderline_measures_s,
+
+src_adventureworks,salesorderdetail,src:SalesOrderDetailID::STRING,,dv,sales_orderline_measures_s,sales_orderline_key
+src_adventureworks,salesorderdetail,CURRENT_TIMESTAMP,,dv,sales_orderline_measures_s,load_dts
+src_adventureworks,salesorderdetail,src:ModifiedDate::TIMESTAMP,,dv,sales_orderline_measures_s,effective_ts
+src_adventureworks,salesorderdetail,src:LineTotal::INT,,dv,sales_orderline_measures_s,line_total
+src_adventureworks,salesorderdetail,"src:OrderQty::NUMBER(18,4)",,dv,sales_orderline_measures_s,order_qty
+src_adventureworks,salesorderdetail,"src:UnitPrice::NUMBER(18,4)",,dv,sales_orderline_measures_s,unit_price
+src_adventureworks,salesorderdetail,"src:UnitPriceDiscount::NUMBER(18,4)",,dv,sales_orderline_measures_s,unit_price_discount
+src_adventureworks,salesorderdetail,,'sales',dv,sales_orderline_measures_s,rec_src

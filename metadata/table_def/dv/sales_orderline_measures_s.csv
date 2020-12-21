@@ -1,0 +1,9 @@
+name,type,kind,null?,default,primary key,unique key,check,expression,comment
+sales_orderline_key,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+load_dts,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+effective_ts,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+line_total,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+order_qty,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+unit_price,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+unit_price_discount,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+rec_src,VARCHAR(4),COLUMN,Y,,N,N,,,
