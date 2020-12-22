@@ -222,10 +222,12 @@ def deploy_dv(ctx):
     with snowflake.connector.connect(**snowflake_config) as ctx:
         # deploy ref tables
         execute_all_ddls(ctx, dir_path, 'ref_*_t.sql')    
-        # deploy non buisines views
+        # deploy non business views
         execute_all_ddls(ctx, dir_path, '*_*[!b]_v.sql')
-        # deploy buisines views
+        # deploy business views
         execute_all_ddls(ctx, dir_path, '*_*b_v.sql')
+        # deploy history links (should not be done earlier)
+        execute_all_ddls(ctx, dir_path, '*_hl_v.sql')
 
 @deploy.command('analytics')
 @click.pass_context
