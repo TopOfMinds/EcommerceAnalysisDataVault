@@ -47,6 +47,11 @@ src_adventureworks,product,src:ProductSubcategoryID::STRING,,dv,product_product_
 src_adventureworks,product,CURRENT_TIMESTAMP,,dv,product_product_subcategory_l,load_dts
 src_adventureworks,product,,'sales',dv,product_product_subcategory_l,rec_src
 
+src_adventureworks,product,"src:ProductID::STRING ||'|'|| src:ProductSubcategoryID::STRING",,dv,product_product_subcategory_l_s,product_product_subcategory_l_key
+src_adventureworks,product,CURRENT_TIMESTAMP,,dv,product_product_subcategory_l_s,load_dts
+src_adventureworks,product,src:ModifiedDate::TIMESTAMP,,dv,product_product_subcategory_l_s,effective_ts
+src_adventureworks,product,,'sales',dv,product_product_subcategory_l_s,rec_src
+
 src_adventureworks,productsubcategory,src:ProductSubcategoryID::STRING,,dv,product_subcategory_s,product_subcategory_key
 src_adventureworks,productsubcategory,CURRENT_TIMESTAMP,,dv,product_subcategory_s,load_dts
 src_adventureworks,productsubcategory,src:ModifiedDate::TIMESTAMP,,dv,product_subcategory_s,effective_ts

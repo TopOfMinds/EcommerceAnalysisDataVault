@@ -16,4 +16,5 @@ dv,sales_context_s,true
 dv,sales_mesaures_s,true
 dv,sales_orderline_measures_s,true
 dv,product_main_s,true
+dv,product_product_subcategory_l_s,true
 dv,product_subcategory_s,true
