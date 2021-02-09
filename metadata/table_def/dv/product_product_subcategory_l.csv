@@ -1,0 +1,6 @@
+name,type,kind,null?,default,primary key,unique key,check,expression,comment
+product_product_subcategory_l_key,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+product_key,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+product_subcategory_key,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+load_dts,"NUMBER(38,0)",COLUMN,Y,,N,N,,,
+rec_src,VARCHAR(4),COLUMN,Y,,N,N,,,

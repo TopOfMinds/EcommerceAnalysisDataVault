@@ -30,3 +30,25 @@ src_adventureworks,product,src:Style::STRING,,dv,product_main_s,style
 src_adventureworks,product,"src:Weight::NUMBER(18,4)",,dv,product_main_s,weight
 src_adventureworks,product,src:WeightUnitMeasureCode::STRING,,dv,product_main_s,weight_unit_measure_code
 src_adventureworks,product,,'sales',dv,product_main_s,rec_src
+
+src_adventureworks,product,src:ProductSubcategoryID::STRING,,dv,product_subcategory_h,product_subcategory_key
+src_adventureworks,product,src:ProductSubcategoryID::STRING,,dv,product_subcategory_h,product_subcategory_id
+src_adventureworks,product,CURRENT_TIMESTAMP,,dv,product_subcategory_h,load_dts
+src_adventureworks,product,,'sales',dv,product_subcategory_h,rec_src
+
+src_adventureworks,productsubcategory,src:ProductSubcategoryID::STRING,,dv,product_subcategory_h,product_subcategory_key
+src_adventureworks,productsubcategory,src:ProductSubcategoryID::STRING,,dv,product_subcategory_h,product_subcategory_id
+src_adventureworks,productsubcategory,CURRENT_TIMESTAMP,,dv,product_subcategory_h,load_dts
+src_adventureworks,productsubcategory,,'sales',dv,product_subcategory_h,rec_src
+
+src_adventureworks,product,"src:ProductID::STRING ||'|'|| src:ProductSubcategoryID::STRING",,dv,product_product_subcategory_l,product_product_subcategory_l_key
+src_adventureworks,product,src:ProductID::STRING,,dv,product_product_subcategory_l,product_key
+src_adventureworks,product,src:ProductSubcategoryID::STRING,,dv,product_product_subcategory_l,product_subcategory_key
+src_adventureworks,product,CURRENT_TIMESTAMP,,dv,product_product_subcategory_l,load_dts
+src_adventureworks,product,,'sales',dv,product_product_subcategory_l,rec_src
+
+src_adventureworks,productsubcategory,src:ProductSubcategoryID::STRING,,dv,product_subcategory_s,product_subcategory_key
+src_adventureworks,productsubcategory,CURRENT_TIMESTAMP,,dv,product_subcategory_s,load_dts
+src_adventureworks,productsubcategory,src:ModifiedDate::TIMESTAMP,,dv,product_subcategory_s,effective_ts
+src_adventureworks,productsubcategory,src:Name::STRING,,dv,product_subcategory_s,name
+src_adventureworks,productsubcategory,,'sales',dv,product_subcategory_s,rec_src

@@ -1,0 +1,6 @@
+name,type,kind,null?,default,primary key,unique key,check,expression,comment
+product_subcategory_key,STRING,COLUMN,Y,,N,N,,,
+load_dts,NUMBER(38,0),COLUMN,Y,,N,N,,,
+effective_ts,TIMESTAMP,COLUMN,Y,,N,N,,,
+name,STRING,COLUMN,Y,,N,N,,,
+rec_src,VARCHAR(4),COLUMN,Y,,N,N,,,

@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW dv.sales_orderline_product_hl
+CREATE OR REPLACE VIEW dv.sales_orderline_product_vp
 AS
 WITH product AS (
   SELECT

@@ -3,10 +3,12 @@ schema,table,generate
 dv,sales_h,true
 dv,sales_orderline_h,true
 dv,product_h,true
+dv,product_subcategory_h,true
 
 -- Links
 dv,sales_sales_orderline_l,true
 dv,sales_orderline_product_l,true
+dv,product_product_subcategory_l,true
 
 -- Satellite
 dv,sales_main_s,true
@@ -14,3 +16,4 @@ dv,sales_context_s,true
 dv,sales_mesaures_s,true
 dv,sales_orderline_measures_s,true
 dv,product_main_s,true
+dv,product_subcategory_s,true
